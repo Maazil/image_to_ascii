@@ -3,7 +3,7 @@ from PIL import Image
 # ASCII characters from dark to light
 ASCII_CHARS = [' ', '.', ':', '=', '+', '*','X', '#', '%', '@']
 
-def image_to_ascii(image_path, output_width=100):
+def image_to_ascii(image_path, output_width=200):
     image = Image.open(image_path)
     image = image.convert('L')  # Convert to grayscale
 
